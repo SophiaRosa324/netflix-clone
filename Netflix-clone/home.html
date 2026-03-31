@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="logo">NETFLIX</h1>
+  <div id="username"></div>
+</header>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Buscar filmes...">
+  
+  <select id="genreSelect">
+    <option value="">Todas categorias</option>
+    <option value="28">Ação</option>
+    <option value="35">Comédia</option>
+    <option value="18">Drama</option>
+    <option value="27">Terror</option>
+  </select>
+</div>
+
+<section class="row">
+  <h3>🔎 Resultados</h3>
+  <div class="movies" id="searchResults"></div>
+</section>
+
+<section class="banner"></section>
+
+<section class="row">
+  <h3>⭐ Favoritos</h3>
+  <div class="movies" id="favorites"></div>
+</section>
+
+<section class="row">
+  <h3>🔥 Em alta</h3>
+  <div class="movies" id="trending"></div>
+</section>
+
+<section class="row">
+  <h3>😂 Comédia</h3>
+  <div class="movies" id="comedy"></div>
+</section>
+
+<section class="row">
+  <h3>💥 Ação</h3>
+  <div class="movies" id="action"></div>
+</section>
+
+<script src="home.js"></script>
+</body>
+</html>
