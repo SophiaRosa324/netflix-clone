@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body>
+
+<div id="navbar"></div>
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Buscar filmes...">
+  
+  <select id="genreSelect">
+    <option value="">Todas categorias</option>
+    <option value="28">Ação</option>
+    <option value="35">Comédia</option>
+    <option value="18">Drama</option>
+    <option value="27">Terror</option>
+  </select>
+</div>
+
+<div class="surprise-container">
+  <select id="surpriseGenre">
+    <option value="">🎲 Geral</option>
+    <option value="28">💥 Ação</option>
+    <option value="35">😂 Comédia</option>
+    <option value="18">🎭 Drama</option>
+    <option value="27">😱 Terror</option>
+  </select>
+
+
+
+  <button id="surpriseBtn">🎬 Surpreenda-me</button>
+</div>
+
+<section class="banner" id="banner">
+  <div class="banner-content">
+    <h1 id="banner-title"></h1>
+    <p id="banner-desc"></p>
+    <div class="banner-buttons">
+      <button onclick="playBanner()">▶ Assistir</button>
+      <button onclick="addBannerFavorite()">+ Minha Lista</button>
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <h3>Resultados</h3>
+  <div class="movies" id="searchResults"></div>
+</section>
+
+<section class="row">
+  <h3>Favoritos</h3>
+  <div class="movies" id="favorites"></div>
+</section>
+
+<section class="row">
+  <h3>Em alta</h3>
+  <div class="movies" id="trending"></div>
+</section>
+
+<section class="row">
+  <h3>Séries Populares</h3>
+  <div class="movies" id="series"></div>
+</section>
+
+<section class="row">
+  <h3>Comédia</h3>
+  <div class="movies" id="comedy"></div>
+</section>
+
+<section class="row">
+  <h3>Ação</h3>
+  <div class="movies" id="action"></div>
+</section>
+
+<script src="../js/home.js"></script>
+<script src="../components/navbar.js"></script>
+<script>
+  loadNavbar();
+</script>
+
+
+</body>
+</html>

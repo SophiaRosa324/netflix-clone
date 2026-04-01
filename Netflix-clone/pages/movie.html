@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filme</title>
+  <link rel="stylesheet" href="../css/movie.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<div class="movie-container">
+  <h1 id="title"></h1>
+
+  <div class="video-container" id="trailer"></div>
+
+  <p id="desc"></p>
+
+  <div class="movie-buttons">
+    <button onclick="addFavorite()">Favoritar</button>
+    <button onclick="tryAnother()">Não gostei, tenta outro</button>
+  </div>
+</div>
+
+<script src="../components/navbar.js"></script>
+<script>
+  loadNavbar();
+</script>
+<script src="../js/movie.js"></script>
+</body>
+</html>

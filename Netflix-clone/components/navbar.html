@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <h1 class="logo" onclick="goHome()">BETFLIX</h1>
+
+    <ul>
+      <li onclick="scrollToSection('trending')">Início</li>
+      <li onclick="scrollToSection('action')">Filmes</li>
+      <li onclick="scrollToSection('comedy')">Séries</li>
+      <li onclick="scrollToSection('favorites')">Minha Lista</li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <span id="nav-user"></span>
+    <button onclick="logout()">Sair</button>
+  </div>
+</nav>
+
+</body>
+</html>
